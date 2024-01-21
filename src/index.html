@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio - Maaz</title>
+</head>
+<body class="bg-amber-50 h-screen"> 
+    <div class="flex flew-row justify-between py-6 px-10">
+        <div class="flex gap-12"><h1 class="text-3xl font-semibold">Maaz</h1>
+        <ul class="md:flex gap-6 justify-center items-center hidden">
+            <li class="cursor-pointer hover:font-medium hover:text-gray-500 transition-all duration-200">About me</li>
+            <li class="cursor-pointer hover:font-medium hover:text-gray-500 transition-all duration-200">Contact Me</li>
+        </ul>
+
+        </div>
+        <div  class="relative flex gap-4 justify-center">
+            <div id="ham-menu" onclick="handleHam()" class="relative flex-col mt-2 md:hidden">
+                <div class="absolute right-2 w-6 h-1 bg-black rounded-full origin-center transition-all ease-out duration-100"></div>
+                <div class="absolute right-2 top-[6px] w-4 h-1 bg-black rounded-full"></div>
+                <div class="absolute right-2 top-[12px] w-6 h-1 origin-center bg-black rounded-full origin-top"></div>
+            </div>
+            <div id="menu" class="hidden w-32 p-4 rounded-md absolute bg-white shadow-md">
+                <ul>
+                    <li class="border-b-2">About Me</li >
+                    <li>Contact Me</li >
+                </ul>              
+            </div>
+            <button class="px-6 py-2 border-2 border-gray-300 rounded-full hover:bg-black hover:text-white transition-colors"> 
+                Resumé
+            </button>
+        </div>
+    </div>
+
+    <div class="flex mt-6 md:flex-row flex-col w-[80%] justify-center mx-auto">
+        <div class="flex-[4] flex-col p-4">
+            <img class="w-40 rounded-3xl" src="./Maaz.jpg" alt="Photo" />
+            <h1 class="text-4xl mt-6 z-20">I'm Maaz Ansari</h1>
+        
+            <p class="mt-4 font-medium">A Web Devloper in MERN, Currently Pursuing MCA from NIT Kurukshetra.</p>
+        </div>
+        <div class="flex-[6] flex flex-col p-6 md:px-20">
+            <h1 class="text-3xl">Passionate, Creative, Establishing great Work with Dedication.</h1>
+            <div class="mt-4 flex flex-col md:flex-row gap-4">
+                <button class="px-6 py-2 border-2 border-gray-300 rounded-full bg-black opacity-80 hover:opacity-100 text-white transition-colors"> 
+                    Talk With Me
+                </button>
+                <button class="px-6 py-2 border-2 border-gray-300 rounded-full hover:bg-black hover:text-white transition-colors"> 
+                    See My Work
+                </button>
+            </div>
+            <div class="md:overflow-y-auto md:h-96 mt-8">
+            <div class="flex flex-col py-2 border-t-2 border-amber-100">
+                <h1 class="text-xl">Work Experience</h1>
+                <div class="mt-2 flex justify-evenly items-center border-2 py-4 px-4 rounded-full bg-white max-w-96">
+                    <img class="w-8 rounded-full" src="./codehop.jpeg" alt="codehop" />
+                    <div>
+                        <p class="text-xs">Part Time SWE Intern</p>
+                        <p class="text-sm font-semibold">Codehop Interfusion</p>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">Nov 2023 - present</p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-8 py-2 border-t-2 border-amber-100">
+                <h1 class="text-xl">Education</h1>
+                <div class="mt-2 flex justify-evenly items-center border-2 py-4 px-4 rounded-full bg-white max-w-96">
+                    <img class="w-8 rounded-full" src="./nitlogo.png" alt="nitlogo" />
+                    <div>
+                        <p class="text-xs">Master of Computer Application</p>
+                        <p class="text-sm font-semibold">NIT Kurukshetra</p>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">2022 - 2025</p>
+                </div>
+                <div class="mt-2 flex justify-evenly items-center border-2 py-4 px-4 rounded-full bg-white max-w-96">
+                    <img class="w-8 rounded-full" src="./ip.jpg" alt="ip" />
+                    <div>
+                        <p class="text-xs">Becholar of Computer Application</p>
+                        <p class="text-sm font-semibold">I.P College, Bulandshahr</p>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">2018 - 2021</p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-8 py-2 border-t-2 border-amber-100">
+                <h1 class="text-xl">Volunteering</h1>
+                <div class="mt-2 flex justify-evenly items-center border-2 py-4 px-4 rounded-full bg-white max-w-96">
+                    <img class="w-8 rounded-full" src="./nitlogo.png" alt="nitlogo" />
+                    <div>
+                        <p class="text-xs">Teach GIT & GITHUB to Juniors</p>
+                        <p class="text-sm font-semibold">NIT Kurukshetra</p>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">2023</p>
+                </div>
+                <div class="mt-2 flex justify-evenly items-center border-2 py-4 px-4 rounded-full bg-white max-w-96">
+                    <img class="w-8 rounded-full" src="./nitlogo.png" alt="nitlogo" />
+                    <div>
+                        <p class="text-xs">Teach HTML & CSS to School Students</p>
+                        <p class="text-sm font-semibold">Digital India Workshop</p>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">2022</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="w-full absolute hidden md:bottom-0 -z-20 opacity-30 md:block">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+        <dotlottie-player src="https://lottie.host/ad529ad8-7b8d-46f2-b315-4fd383aa72cb/NZD26I4tVu.json" background="transparent" speed="1" style="width: 100%;" loop autoplay></dotlottie-player>
+    </div>
+
+    <script>
+        function handleHam(){
+            var ham = document.getElementById("ham-menu");
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+            ham.childNodes[1].classList.toggle('rotate-45');
+            ham.childNodes[5].classList.toggle('rotate-135');
+            ham.childNodes[5].classList.toggle('top-0');
+            ham.childNodes[3].classList.toggle('hidden');
+
+        }
+    </script>
+</body>
+</html>
