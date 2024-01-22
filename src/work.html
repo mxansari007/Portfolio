@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio - Maaz</title>
+    <script src="https://kit.fontawesome.com/afc10bc9d8.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-amber-50 h-screen">
+    <div class="flex flew-row justify-between py-6 px-4 md:px-10">
+        <div class="flex gap-12"><a href="./index.html"><h1 class="cursor-pointer text-3xl font-semibold">Maaz</h1></a>
+        <ul class="md:flex gap-6 justify-center items-center hidden">
+            <li class="cursor-pointer hover:font-medium hover:text-gray-500 transition-all duration-200">About me</li>
+            <li class="cursor-pointer hover:font-medium hover:text-gray-500 transition-all duration-200">Contact Me</li>
+        </ul>
+
+        </div>
+        <div  class="relative flex gap-4 justify-center">
+            <div id="ham-menu" onclick="handleHam()" class="relative flex-col mt-2 md:hidden">
+                <div class="absolute right-2 w-6 h-1 bg-black rounded-full origin-center transition-all ease-out duration-100"></div>
+                <div class="absolute right-2 top-[6px] w-4 h-1 bg-black rounded-full"></div>
+                <div class="absolute right-2 top-[12px] w-6 h-1 origin-center bg-black rounded-full"></div>
+            </div>
+            <div id="menu" class="hidden w-32 p-4 rounded-md absolute bg-white shadow-md">
+                <ul>
+                    <li class="border-b-2">About Me</li >
+                    <li>Contact Me</li >
+                </ul>              
+            </div>
+            <button class="px-6 py-2 border-2 border-gray-300 rounded-full hover:bg-black hover:text-white transition-colors"> 
+                Resumé
+            </button>
+        </div>
+    </div>
+
+    <div class="w-[80%] mx-auto p-4">
+        <h1 class="text-4xl">Skills</h1>
+        <div class="w-full p-4 flex flex-row items-center gap-y-8">
+            <div class="p-4 flex flex-col items-center justify-center">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="https://lottie.host/5eff20dc-7327-48ee-b1a1-678478272745/LVbq5Z5Lt8.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></dotlottie-player>
+            <p class="text-xl mt-2">React Js</p>
+        </div>
+        <div class="ml-8 flex flex-col justify-center items-center">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/4316bfd6-70d6-4254-b77c-c34db9811111/3tXqAnXlAF.json" background="##FFFFFF" speed="1" style="width: 90px; height: 90px" loop autoplay direction="1" mode="normal"></lottie-player>
+            <p class="text-xl mt-2">React Native</p>
+        </div>
+        <div class="ml-8 flex flex-col justify-center items-center">
+            <img width="90px" class="rounded-md" src="./tailwind.png" alt="tailwind"/>
+            <p class="text-xl mt-2">Tailwind Css</p>
+        </div>
+        <div class="ml-8 flex flex-col justify-center items-center">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/19e82082-6a05-4275-8051-7f7dcaa88c36/Gx09wVDNBU.json" background="##FFFFFF" speed="1" style="width: 90px; height: 90px" loop autoplay direction="1" mode="normal"></lottie-player>
+            <p class="text-xl mt-2">JavaScript</p>
+        </div>
+        </div>
+    </div>
+    <script>
+        function handleHam(){
+            var ham = document.getElementById("ham-menu");
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+            ham.childNodes[1].classList.toggle('rotate-45');
+            ham.childNodes[5].classList.toggle('rotate-135');
+            ham.childNodes[5].classList.toggle('top-0');
+            ham.childNodes[3].classList.toggle('hidden');
+
+        }
+
+
+    </script>
+</body>
+</html>
