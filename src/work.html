@@ -41,7 +41,8 @@
 
     <div class="w-[80%] mx-auto p-4">
         <h1 class="text-4xl">Skills</h1>
-        <div class="w-full p-4 flex flex-row items-center gap-y-8">
+        <div class="w-full p-4 flex flex-col md:flex-row items-center gap-y-8 flex-wrap">
+            <div class="flex md:flex-row">
             <div class="p-4 flex flex-col items-center justify-center">
             <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
             <dotlottie-player src="https://lottie.host/5eff20dc-7327-48ee-b1a1-678478272745/LVbq5Z5Lt8.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></dotlottie-player>
@@ -51,6 +52,8 @@
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/4316bfd6-70d6-4254-b77c-c34db9811111/3tXqAnXlAF.json" background="##FFFFFF" speed="1" style="width: 90px; height: 90px" loop autoplay direction="1" mode="normal"></lottie-player>
             <p class="text-xl mt-2">React Native</p>
         </div>
+        </div>
+        <div class="flex">
         <div class="ml-8 flex flex-col justify-center items-center">
             <img width="90px" class="rounded-md" src="./tailwind.png" alt="tailwind"/>
             <p class="text-xl mt-2">Tailwind Css</p>
@@ -58,6 +61,11 @@
         <div class="ml-8 flex flex-col justify-center items-center">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/19e82082-6a05-4275-8051-7f7dcaa88c36/Gx09wVDNBU.json" background="##FFFFFF" speed="1" style="width: 90px; height: 90px" loop autoplay direction="1" mode="normal"></lottie-player>
             <p class="text-xl mt-2">JavaScript</p>
+        </div>
+    </div>
+        <div class="ml-8 flex flex-col justify-center items-center">
+            <img width="90px" class="rounded-md" src="./git.png" alt="tailwind"/>
+            <p class="text-xl mt-2">Git</p>
         </div>
         </div>
     </div>
@@ -68,7 +76,7 @@
             menu.classList.toggle("hidden");
             ham.childNodes[1].classList.toggle('rotate-45');
             ham.childNodes[5].classList.toggle('rotate-135');
-            ham.childNodes[5].classList.toggle('top-0');
+            ham.childNodes[5].classList.toggle('top-[12px]');
             ham.childNodes[3].classList.toggle('hidden');
 
         }
